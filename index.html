@@ -62,15 +62,26 @@
             background-color: #bf3c19;
         }
 
-        .video-container {
-            text-align: center;
+        .video-section {
             margin-top: 4rem;
+            text-align: center;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
         }
 
         .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            max-width: 960px;
-            height: 540px;
+            height: 100%;
             border: none;
             border-radius: 10px;
             box-shadow: 0 0 12px rgba(0,0,0,0.6);
@@ -79,13 +90,7 @@
 </head>
 <body>
 
-<div class="video-container">
-
-    <iframe
-            src="https://www.youtube.com/embed/ZZAgZg-oZ_s"
-            allowfullscreen>
-    </iframe>
-</div>
+<h1>Contact Us</h1>
 
 <div class="form-container">
     <form name="contact" method="POST" data-netlify="true">
@@ -104,7 +109,16 @@
     </form>
 </div>
 
-
+<div class="video-section">
+    <h2>Watch Our Video</h2>
+    <div class="video-container">
+        <iframe
+                src="https://www.youtube.com/embed/ZZAgZg-oZ_s"
+                title="YouTube video"
+                allowfullscreen>
+        </iframe>
+    </div>
+</div>
 
 </body>
 </html>
