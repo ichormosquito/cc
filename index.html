@@ -76,6 +76,19 @@
             height: 0;
         }
 
+        .square-image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .square-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -106,7 +119,7 @@
         </iframe>
     </div>
 </div>
-
+<h2>Stay in touch!</h2>
 <div class="form-container">
     <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
@@ -124,7 +137,9 @@
     </form>
 </div>
 
-
+<div class="square-image-container">
+    <img src="leaf-small2.png" alt="Centered Square" class="square-image" />
+</div>
 
 <div class="footer-text">
     &copy; 2025 Rejuvenation Nation
