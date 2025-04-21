@@ -83,8 +83,9 @@
         }
 
         .square-image {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
+            margin-top: 2rem;
             object-fit: cover;
             border-radius: 8px;
         }
@@ -98,6 +99,10 @@
             border: none;
             border-radius: 10px;
             box-shadow: 0 0 12px rgba(0,0,0,0.6);
+        }
+        #touch {
+            margin-top: 2rem;
+            color: palegoldenrod;
         }
         .footer-text {
             text-align: center;
@@ -119,7 +124,7 @@
         </iframe>
     </div>
 </div>
-<h2>Stay in touch!</h2>
+<h2 id="touch">Stay in touch!</h2>
 <div class="form-container">
     <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
